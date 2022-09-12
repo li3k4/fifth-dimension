@@ -41,6 +41,20 @@
     max-width: 393px;
 }
 
+.item-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0px;
+}
+.icon {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .btn {
     font-family: 'Phl';
     margin-top: 32px;
@@ -80,11 +94,14 @@
         flex-direction: column-reverse;
         gap: 0px;
     }
-
+    .item-1{
+        height: 305px;
+    }
     .item-1-img {
         width: 100vh;
-        height: 44vh;
+        height: 32vh;
         margin-bottom: 80px;
+        
     }
 
     .item-text {
@@ -99,7 +116,7 @@
     .btn {
         position: absolute;
         margin: 0px 44px;
-        bottom: 57px;
+        bottom: 64px;
     }
 
     .item-pp {
@@ -116,6 +133,7 @@
 @media (max-width:769px) {
     .item-1 {
         width: 40%;
+
     }
 
     .item-text {
@@ -130,5 +148,6 @@
 @media (max-width: 1024px) {
     .item-1 {
         width: 55%;
+        height: 279px;
     }
 }
