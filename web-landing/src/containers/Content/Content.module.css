@@ -38,7 +38,6 @@
 
 .item-text {
     border-bottom: 1px solid rgba(177, 148, 114, 0.32);
-    max-width: 393px;
 }
 
 .item-icons {
@@ -68,6 +67,8 @@
     border-radius: 32px;
     font-size: 16px;
     letter-spacing: 0.02em;
+    bottom: 64px;
+    position: absolute;
 }
 
 .btn:hover {
@@ -77,7 +78,7 @@
 .item-pp {
     display: flex;
     flex-direction: column;
-    position: fixed;
+   position: fixed;
     bottom: 8px;
 
 }
@@ -89,24 +90,23 @@
 }
 
 /*MOBILE*/
-@media (max-width: 426px) {
+@media  (max-width: 424px) {
     .container {
         flex-direction: column-reverse;
         gap: 0px;
     }
     .item-1{
-        height: 305px;
+        height: 400px;
     }
     .item-1-img {
         width: 100vh;
-        height: 32vh;
-        margin-bottom: 80px;
-        
+        height: 41vh;
+        margin-bottom: 80px;  
     }
 
     .item-text {
         border-bottom: 0px;
-        width: auto;
+        width: 308px;
     }
 
     .item-2 {
@@ -114,9 +114,7 @@
     }
 
     .btn {
-        position: absolute;
-        margin: 0px 44px;
-        bottom: 64px;
+        margin: 0px 44px !important;
     }
 
     .item-pp {
@@ -129,25 +127,67 @@
     }
 }
 
-/*TABLET*/
-@media (max-width:769px) {
-    .item-1 {
-        width: 40%;
-
+/*MOBILE*/
+@media (min-width: 425px) and (max-width: 671px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .item-1{
+        height: 444px;
+    }
+    .item-1-img {
+        width: 100vh;
+        height: 52vh;
+        margin-bottom: 80px;
     }
 
     .item-text {
-        width: 305px;
+        border-bottom: 0px;
+        width: auto;
     }
 
+    .item-2 {
+        margin: 0px 16px;
+    }
+
+    .btn {
+        margin-left: 0px;
+        bottom: 369px;
+    }
+
+    .item-pp {
+        display: inline;
+        bottom: 1px
+    }
+
+    .pp {
+        margin-left: 25%;
+    }
+    h2{
+        width: 375px;
+    }
+}
+
+/*TABLET*/
+@media (min-width: 672px) and (max-width: 1023px) {
+    .item-1 {
+        width: 40%;
+    }
+    .item-text {
+        width: 388px;
+    }
     .item-2 {
         width: 250px;
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) { 
     .item-1 {
         width: 55%;
         height: 279px;
+    }
+    .item-text{
+        max-width: 393px;
     }
 }
