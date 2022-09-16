@@ -96,12 +96,12 @@
         gap: 0px;
     }
     .item-1{
-        height: 400px;
+        height: 320px;
     }
     .item-1-img {
         width: 100vh;
-        height: 41vh;
-        margin-bottom: 80px;  
+        height: 52vh;
+        margin-bottom: 7vh;
     }
 
     .item-text {
@@ -114,6 +114,7 @@
     }
 
     .btn {
+        bottom: 40vh;
         margin: 0px 44px !important;
     }
 
@@ -134,12 +135,12 @@
         gap: 0px;
     }
     .item-1{
-        height: 444px;
+        height: 52vh;
     }
     .item-1-img {
         width: 100vh;
         height: 52vh;
-        margin-bottom: 80px;
+        margin-bottom: 7vh;
     }
 
     .item-text {
@@ -153,7 +154,7 @@
 
     .btn {
         margin-left: 0px;
-        bottom: 369px;
+        bottom: 42vh;
     }
 
     .item-pp {
